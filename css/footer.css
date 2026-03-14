@@ -1,0 +1,112 @@
+footer {
+  background-color: rgb(240, 243, 245);
+}
+.footer-container {
+  display: grid;
+  font-size: large;
+}
+.copy-right {
+  font-size: small;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  padding: 1rem;
+}
+.about div {
+  flex: 1;
+  min-width: 200px;
+  display: grid;
+  gap: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.s-icon {
+  color: red;
+}
+
+.contact {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(rgb(110, 110, 213), rgb(47, 47, 196));
+}
+.contact div {
+  display: inline-block;
+  gap: 1rem;
+}
+.contact input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 1rem;
+  font-size: large;
+}
+.contact button {
+  padding: 15px 1rem;
+  border-radius: 5px;
+  border: none;
+  margin: 1rem;
+  color: #fff;
+  background-color: rgb(210, 72, 72);
+}
+.contact h2 {
+  text-align: center;
+}
+
+/* links */
+
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.link-container ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+.link-container h4 {
+  margin: 1rem 0;
+}
+.link-row li, .link-col li {
+  transition: transform 0.3s ease;
+}
+.link-col li:hover {
+  transform: translateX(4px);
+}
+.link-row li:hover {
+  transform: scale(1.2);
+}
+.link-row {
+  flex: 1;
+}
+.link-row ul {
+  display: grid;
+  font-size: x-large;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.link-col {
+  flex: 1;
+}
+.link-grid {
+  flex: 1;
+  /* display: grid; */
+}
+.link-grid img {
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}

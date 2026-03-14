@@ -1,0 +1,39 @@
+
+.confirmation-message {
+  top: 0;
+  z-index: 10;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  display: grid;
+  text-align: center;
+  background-color: rgb(185, 237, 185);
+}
+.checkmark {
+  font-size: xx-large;
+}
+/* Optional animation for the checkmark */
+@keyframes checkmarkPop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.checkmark.animated i {
+  animation: checkmarkPop 0.6s ease-out forwards;
+}

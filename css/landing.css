@@ -1,0 +1,87 @@
+.landing-container {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)) ,url('../img/landing.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(19, 103, 176);
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 10px;
+}
+.landing-container img {
+  background-color: aqua;
+  border-radius: 50%;
+}
+.landing-content {
+  margin: 0 1rem;
+  display: grid;
+  gap: 1rem;
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.2);
+}
+.landing-content span {
+  color: rgb(237, 152, 220);
+}
+.landing-content p {
+  line-height: 1.4;
+  font-weight: 550;
+}
+.landing-content a{
+  background-color: rgb(61, 103, 219);
+  padding: 10px;
+  color: white;
+  width: 300px;
+}
+
+/* achievements section */
+
+.achievements-container {
+  background-color: rgb(129, 129, 227);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  align-items: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+.achievements-container h3, .achievements-container h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+.achievements-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  justify-content: center;
+}
+
+@media (width < 480px) {
+  .landing-container {
+    grid-template-columns: 1fr;
+  }
+  .landing-content a {
+    content: 'Book';
+    width: 250px;
+  }
+}
+@media (width < 1000px) {
+  .landing-container {
+    grid-template-columns: 3fr 1fr;
+  }
+  .landing-container img {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+  .landing-content p {
+    font-weight: 500;
+  }
+}
